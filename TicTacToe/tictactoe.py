@@ -24,7 +24,6 @@ class UserPlayer(Player):
             elif grid.read_cell(int(x) - 1, int(y) - 1) in "XO":
                 print("Эта координатa занята!")
             else:
-                # Turns
                 grid.write_cell(int(x) - 1, int(y) - 1, self.symbol)
                 break
 
